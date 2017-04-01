@@ -111,7 +111,7 @@ animation-name: motion;
   margin-top: -0%;
   font-family: Paper;
   font-size: 154px;
-  text-shadow: 4px 4px 4px #F3CEED;
+  text-shadow: 4px 4px 4px #F583E9;
   animation-name: bossy;
     animation-duration: 2s;
     animation-delay: 1.4s;
@@ -134,20 +134,65 @@ animation-name: motion;
     opacity: 0;
 }
 
+#aboutme{
+  margin-bottom: -4%;
+}
+
     #atext{
       display: block;
       font-family: 'Spirax', cursive;
-      font-size: 44px;
+      font-size: 48px;
       background-color: grey;
       color: #F3CEED;
     }
 
+    hr {
+    padding: 0;
+    border: none;
+    border-top: 24px double #9A7ABB;
+    text-align: center;
+}
+
+#toolkit{
+  margin-top: -14%;
+}
+
+ #hrone {
+    padding: 0;
+    border: none;
+    border-top: 24px double #E434B4;
+    text-align: center;
+}
+
+#rtext{
+  margin-top: -4%;
+ display: block;
+      font-family: 'Spirax', cursive;
+      font-size: 48px;
+      background-color: grey;
+      color: #F3CEED; 
+}
+
+#checks{
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  top: 350%;
+}
+
 .parallax {
     background-image: url('one.gif');
-    animation-duration: 7s;
-  
-   /*animation-name: slide;
-    animation-timing-function: ease-in-out; */
+    max-width: 100%;
+    z-index: -900;
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxone {
+    background-image: url('render.jpg');  
     max-width: 100%;
     z-index: -900;
     height: 100%; 
@@ -168,6 +213,19 @@ animation-name: motion;
   height: auto;
 }
 
+.overone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  width: 99%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #E434B4;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -182,6 +240,10 @@ animation-name: motion;
 }
 
 .container:hover .overlay {
+  opacity: 1;
+}
+
+.container:hover .overone {
   opacity: 1;
 }
 
